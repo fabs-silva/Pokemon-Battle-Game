@@ -4,7 +4,7 @@ import { Pokemon, ResponsePokemon } from "../models/Pokemon";
 import { renderBoard } from "../views/BoardRender";
 import { randomNumbers } from "./GeneralControllers";
 
-const createNewPokemon = (result: unknown): Pokemon => {
+const createNewPokemon = (result: any): Pokemon => {
   const pokemonResponse = result.value as ResponsePokemon;
   const types = pokemonResponse.types.map((type) => {
     return type.type.name;

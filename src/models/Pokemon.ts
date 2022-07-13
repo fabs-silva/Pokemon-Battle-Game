@@ -12,7 +12,7 @@ export interface ResponsePokemon {
   };
   sprites: {
     other: {
-      home: {
+      "official-artwork": {
         front_default: string;
       };
     };
